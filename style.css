@@ -24,7 +24,7 @@ header > h1{
     color: white;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     padding-top: 25px;
     margin: auto;
 }
@@ -35,9 +35,22 @@ header > h2{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: lighter;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.808);
 }
 
-nav > a{
+nav ul{
+    margin: 0px;
+    padding: 1px 5px 0px 15px;
+}
+
+nav ul li{
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    margin: 0px;
+}
+
+nav ul li a{
     padding-right: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -47,11 +60,20 @@ nav > a{
     font-size: small;
 }
 
-nav > a:hover{
+nav ul.contats{
+    display: none;
+}
+
+nav ul.contats:hover{
+    display: block;
+}
+
+nav ul li a:hover{
     background-color: #87ee7b65;
     color: var(--cor1);
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 5px 5px;
 }
+
 
 main{
     margin: auto;
@@ -68,22 +90,41 @@ article > h1{
     color: var(--cor1);
     font-family: 'Courier New', 'Times New Roman', Times, sans-serif;
     font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.808);
 }
 
 article > h2{
     color: var(--cor1);
     background-image: linear-gradient(to right, var(--cor5), transparent);
     font-family: 'Courier New', 'Times New Roman', Times, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.644);
 }
 
 article > p{
     text-indent: 2em;
 }
 
+article.container{
+    max-width: 700px;
+}
+
+.video{
+    width: 83.9%;
+    position: relative;
+    padding: 10px;
+    display: block;
+    left: 7%;   
+
+}
+
 article > iframe{
     margin: auto;
     display: block;
     margin-bottom: 25px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
 }
 
 aside{
@@ -106,11 +147,21 @@ aside > h2{
     
 }
 
-aside > ul{
+aside > h2:hover{
+    background-color: #57EC47;
+    color: #036900;
+    cursor: pointer;
+}
+
+aside div#hide_content {
+    display: none;
+}
+
+aside div#hide_content > ul{
     columns: 2;
 }
 
-aside > p{
+aside div.content > p{
     text-indent: 2em;
 }
 
