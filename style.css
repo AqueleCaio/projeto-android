@@ -38,19 +38,19 @@ header > h2{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.808);
 }
 
-nav ul{
+nav > ul{
     margin: 0px;
     padding: 1px 5px 0px 15px;
 }
 
-nav ul li{
+nav > ul li{
     list-style: none;
     text-align: left;
     display: inline-block;
     margin: 0px;
 }
 
-nav ul li a{
+nav > ul li a{
     padding-right: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -60,20 +60,11 @@ nav ul li a{
     font-size: small;
 }
 
-nav ul.contats{
-    display: none;
-}
-
-nav ul.contats:hover{
-    display: block;
-}
-
-nav ul li a:hover{
+nav > ul li a:hover{
     background-color: #87ee7b65;
     color: var(--cor1);
     border-radius: 5px 5px 5px 5px;
 }
-
 
 main{
     margin: auto;
@@ -108,15 +99,6 @@ article.container{
     max-width: 700px;
 }
 
-.video{
-    width: 83.9%;
-    position: relative;
-    padding: 10px;
-    display: block;
-    left: 7%;   
-
-}
-
 article > iframe{
     margin: auto;
     display: block;
@@ -124,7 +106,6 @@ article > iframe{
     height: 100%;
     width: 100%;
     position: absolute;
-
 }
 
 aside{
@@ -144,7 +125,6 @@ aside > h2{
     box-shadow: -3px 1px 20px 14px rgb(0 0 0 / 15%);
     padding-left: 10px;
     margin: -10px -10px 0px -10px;
-    
 }
 
 aside > h2:hover{
@@ -155,6 +135,7 @@ aside > h2:hover{
 
 aside div#hide_content {
     display: none;
+    text-indent: 2em;
 }
 
 aside div#hide_content > ul{
@@ -190,6 +171,14 @@ a#final_link:hover{
 
 abbr{
     text-decoration: none;
+}
+
+.video{
+    width: 83.9%;
+    position: relative;
+    padding: 10px;
+    display: block;
+    left: 7%;   
 }
 
 .link{
