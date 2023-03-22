@@ -93,6 +93,7 @@ aside{
     padding: 0px 10px;
 }
 
+
 aside > h2{
     color: white;
     background-color: var(--cor2);
@@ -102,6 +103,7 @@ aside > h2{
     box-shadow: -3px 1px 20px 14px rgb(0 0 0 / 15%);
     padding-left: 10px;
     margin: -10px -10px 0px -10px;
+    
 }
 
 aside > ul{
