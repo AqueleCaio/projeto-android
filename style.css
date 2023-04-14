@@ -50,6 +50,10 @@ nav > ul li{
     margin: 0px;
 }
 
+nav > .material-symbols-outlined{
+    display: none;
+}
+
 nav > ul li a{
     padding-right: 10px;
     text-decoration: none;
@@ -58,12 +62,14 @@ nav > ul li a{
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 10px;
     font-size: small;
+    transition: .5s;
 }
 
-nav > ul li a:hover{
-    background-color: #87ee7b65;
+nav > ul li:hover{
+    background-color: #b0f5a9a1;
     color: var(--cor1);
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
+    transition: .5s;
 }
 
 main{
