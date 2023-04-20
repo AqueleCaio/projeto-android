@@ -62,7 +62,10 @@ nav > ul li a{
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 10px;
     font-size: small;
-    transition: .5s;
+}
+
+nav ul > li{
+    transition: .6s;
 }
 
 nav > ul li:hover{
