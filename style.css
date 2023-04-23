@@ -131,7 +131,7 @@ aside > h2{
     font-size: 13pt;
     border-radius: 10px 10px 0px 0px;
     font-weight: bold;
-    box-shadow: -3px 1px 20px 14px rgb(0 0 0 / 15%);
+    box-shadow: -3px 1px 20px 14px rgba(0, 0, 0, 0.068);
     padding-left: 10px;
     margin: -10px -10px 0px -10px;
 }
@@ -142,7 +142,7 @@ aside > h2:hover{
     cursor: pointer;
 }
 
-aside div#hide_content {
+aside div#hide_content{
     display: none;
     text-indent: 2em;
 }
