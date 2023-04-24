@@ -134,6 +134,7 @@ aside > h2{
     box-shadow: -3px 1px 20px 14px rgba(0, 0, 0, 0.068);
     padding-left: 10px;
     margin: -10px -10px 0px -10px;
+    user-select: none;
 }
 
 aside > h2:hover{

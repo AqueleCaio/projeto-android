@@ -3,18 +3,18 @@
 @media screen and (min-width: 300px) and (max-width: 760px){
 
     main{
-        width: 100%;
+        width: 96%;
         height: 100%;
     }
+
     header > nav .menu{
         display: none;
     }
 
     header > nav > ul > li{
        display: block;
-       padding-bottom: 5px;
-       margin: 20px 0 0;
-       text-align: center;   
+       padding: 15px;
+       text-align: center; 
     }
 
     header > nav > ul > li:hover{
@@ -39,6 +39,9 @@
         background-color: rgba(37, 150, 37, 0.884);
     }
 
+    ::-webkit-scrollbar{
+        display: none;
+    }
 
       
 }
