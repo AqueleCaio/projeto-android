@@ -143,6 +143,11 @@ aside > h2:hover{
     cursor: pointer;
 }
 
+aside > h2 img{
+    width: 25px;
+    height: 25px;
+}
+
 aside div#hide_content{
     display: none;
     text-indent: 2em;

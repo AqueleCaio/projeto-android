@@ -1,6 +1,8 @@
-var content = document.getElementById('click_content')
-var icon_menu = document.getElementById('icon_menu')
-var op_content = document.getElementById('optinal_content')
+let op_content = document.getElementById('optinal_content')
+let content = document.getElementById('click_content')
+let icon_menu = document.getElementById('icon_menu')
+let content_menu = document.getElementById('imenu')
+let row = document.getElementById('icon_row')
 
 icon_menu.addEventListener('click', showMenu)
 content.addEventListener('click', clickContent)
