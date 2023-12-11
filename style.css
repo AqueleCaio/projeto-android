@@ -215,3 +215,47 @@ strong{
     color: var(--cor2);
     font-weight: bold;
 }
+
+@media screen and (min-width: 300px) and (max-width: 760px){
+
+    main{
+        width: 96%;
+        height: 100%;
+    }
+
+    header > nav .menu{
+        display: none;
+    }
+
+    header > nav > ul > li{
+       display: block;
+       padding: 15px;
+       text-align: center; 
+    }
+
+    header > nav > ul > li:hover{
+        background-color: rgb(79, 196, 79);
+        cursor: pointer;
+    }
+
+    nav > .material-symbols-outlined{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+        transform: scale(1);
+        transition: .4s;
+        user-select: none;
+    }
+
+    nav > .material-symbols-outlined:hover{
+        cursor: pointer;
+        background-color: rgba(37, 150, 37, 0.884);
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
