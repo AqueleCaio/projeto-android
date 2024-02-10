@@ -216,6 +216,11 @@ strong{
     font-weight: bold;
 }
 
+/* criar uma animação para girar o icone de seta (#icon_row) */
+#icon_row{
+    transition: .5s;
+}
+
 @media screen and (min-width: 300px) and (max-width: 760px){
 
     main{

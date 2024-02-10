@@ -1,4 +1,14 @@
 const op_content = document.getElementById('optinal_content')
+let rotated = false;
+
+$('#click_content').click(() =>{
+    if(rotated) {
+        $("#icon_row").css({ "transform": "rotate(0deg)", "position": "relative", "top": "0px"});
+    } else {
+        $("#icon_row").css({ "transform": "rotate(180deg)", "position": "relative", "top": "10px"});
+    }
+    rotated = !rotated;
+});
 
 $('#click_content').click(() =>{
     if (hide_content.style.display == 'block') {
