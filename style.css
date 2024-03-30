@@ -147,12 +147,12 @@ aside > h2 img{
     height: 25px;
 }
 
-aside div#hide_content{
+aside div #hide_content{
     display: none;
     text-indent: 2em;
 }
 
-aside div#hide_content > ul{
+aside div #hide_content > ul{
     columns: 2;
 }
 
@@ -232,13 +232,13 @@ strong{
         display: none;
     }
 
-    header > nav > ul > li{
+    header > nav .menu > li{
        display: block;
        padding: 15px;
        text-align: center; 
     }
 
-    header > nav > ul > li:hover{
+    header > nav .menu > li:hover{
         background-color: rgb(79, 196, 79);
         cursor: pointer;
     }
@@ -258,9 +258,5 @@ strong{
     nav > .material-symbols-outlined:hover{
         cursor: pointer;
         background-color: rgba(37, 150, 37, 0.884);
-    }
-
-    ::-webkit-scrollbar{
-        display: none;
     }
 }

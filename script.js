@@ -1,7 +1,7 @@
-const op_content = document.getElementById('optinal_content')
 let rotated = false;
+const click_content = $('#click_content') // Area clicavel para aparecer o hide_content
 
-$('#click_content').click(() =>{
+click_content.click(() =>{
     if(rotated) {
         $("#icon_row").css({ "transform": "rotate(0deg)", "position": "relative", "top": "0px"});
     } else {
@@ -10,32 +10,24 @@ $('#click_content').click(() =>{
     rotated = !rotated;
 });
 
-$('#click_content').click(() =>{
-    if (hide_content.style.display == 'block') {
-        (hide_content.style.display = 'none')
-    } else {
-       (hide_content.style.display = 'block')
-    }
-    op_content.scrollIntoView({ behavior: "smooth" })
+click_content.click(() => {
+    $('#hide_content').slideToggle();
 });
+
 
 /* ______________________________________________ */
 
-$('#icon_menu').click(() =>{
-    if (imenu.style.display == 'block'){
-        imenu.style.display = 'none'
-    } else {
-        imenu.style.display = 'block'
-    }
+$('#icon_menu').click(() => {
+    $('#imenu').slideToggle();
 });
 
 /* ______________________________________________ */
 
 /* Função para mostrar o menu quando a tela for maior ou igual a 760px*/
-$(window).resize(() =>{
-    if (window.innerWidth >= 760){
-        imenu.style.display = 'block'
+$(window).resize(() => {
+    if ($(window).width() >= 760) {
+        $('#imenu').css('display', 'block');
     } else {
-        imenu.style.display = 'none'
+        $('#imenu').css('display', 'none');
     }
 });
